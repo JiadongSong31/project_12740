@@ -57,8 +57,8 @@
         <div class="post">
 
   <header class="post-header">
-     <h1 class="post-title">Project Template</h1>
-     <p class="post-meta"> • Zhang San; Li Si</p>
+     <h1 class="post-title">Smart Greenhouse Environment Control System</h1>
+     <p class="post-meta"> • Jiadong Song; Jiayong Hu; Jingwei Li; Yiqi Zhou</p>
   </header>
 
   <article class="post-content">
@@ -67,49 +67,53 @@
 <hr />
 <h2 id="introduction">Introduction</h2>
 <ul>
-  <li>Write a brief summary of your project</li>
+  <li>Our project is to use temperature and light intensity sensors to monitor and control the environment factors in a greenhouse.</li>
 </ul>
 
 <h3 id="motivation">Motivation</h3>
 <ul>
-  <li>Motivate the problem you plan to address</li>
-  <li>Why is the problem you are addressing important or interesting?</li>
+  <li>Greenhouse is one of the important innovations to improve crops yield. Temperature and light intensity are two important environmental factors that affect the plants’ growth. But it is hard and time-consuming for people to monitor and control these factors manually, which is the motivation behind this Smart Greenhouse project. </li>
 </ul>
 
 <h3 id="goals">Goals</h3>
 <ul>
-  <li>What are you going to achieve by the end of the project specifically?</li>
+  <li>The goal of our system is to monitor the greenhouse environment and adjust the light and temperature automatically so that the plant is constantly absorbing light and in a convenient temperature range. Thus the crop yield can be maximized by ensuring the plant is always in a conducive growing environment while lowering the human effort required.</li>
 </ul>
 
 <hr />
 <h2 id="for-progress-report">For Progress Report</h2>
 <h3 id="current-progress">Current Progress</h3>
 <ul>
-  <li>Summarize what you have done so far</li>
-  <li><strong>Highlights:</strong> In particular, articulate thing(s) you have learned / solved outside of what was taught in class</li>
+  <li>We have built the two sensors and written Python codes to monitor the parameters based on the tutorials. One for measuring light intensity, and the other for measuring temperature.</li>
+<!--   <li><strong>Highlights:</strong> In particular, articulate thing(s) you have learned / solved outside of what was taught in class</li> -->
 </ul>
 
 <h3 id="problems-encountered">Problems Encountered</h3>
 <ul>
-  <li>Articulate the problems you have encountered</li>
-  <li>This section is of the most importance in the progress report. It not only give the TA information on what help you may need, and also encourages you to think deeper about your problems.</li>
+  <li>The sampling frequency should be carefully chosen to avoid aliasing. Our preliminary tests are conducted by sampling every 1 second. In theory, the sampling frequency should be more than twice the true frequency to avoid aliasing. For light intensity, further study and experiments are needed to determine the best sampling frequency given a specific light source. For temperature, aliasing is not our major concern and a more appropriate sampling frequency will be decided to accommodate our goals and reduce data size.</li>
+  <li>Another problem is to identify light intensity. We as humans have a more direct understanding on temperature data while the numbers acquired by photosensitive light sensor module don’t really make sense. Proper light intensity categories should be designed not only for human perspective but also for the plants.</li>
 </ul>
 
 <h3 id="future-plan">Future Plan</h3>
 <ul>
-  <li>Describe what you plan to do in the next two weeks</li>
+  <li>In the next two weeks, we have four tasks to complete.</li>
+  <li>First, we are going to set up our own IoT device.</li>
+  <li>Second, we are going to determine the appropriate sampling frequencies for both sensors and finish the control part of the codes.</li>
+  <li>Then, we are going to build a green house miniature to test our sensing and control system.</li>
+  <li>Finally, we are going to tune the parameters, improve our implementation and submit our project video.</li>
 </ul>
 
 <hr />
 <h2 id="methodology">Methodology</h2>
 <h3 id="phenomena-of-interest">Phenomena of Interest</h3>
 <ul>
-  <li>Describe the physical phenomena of interest, e.g. physical principles, static and dynamic behavior, and signal characteristics</li>
+  <li>In this project, light intensity will be measured through illuminance, where lux are the units (equivalent to lumens per squared-meter). For reference, an office will normally have lux values between 320-500 lux.</li>
+  <li>Celsius is the temperature unit we are going to use, where 0°C is the freezing point of water and 100°C is the boiling point of water.</li>
 </ul>
 
 <h3 id="sensors-used">Sensor(s) Used</h3>
 <ul>
-  <li>Describe the sensor(s) you used, e.g. physical principles, static and dynamic behavior, and signal characteristics</li>
+  <li>We are going to use DHT11 Temperature & Humidity Sensor Module and Photosensitive Light Sensor Module.</li>
 </ul>
 
 <h3 id="signal-conditioning-and-processing">Signal Conditioning and Processing</h3>

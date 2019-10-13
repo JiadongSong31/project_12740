@@ -2,5 +2,8 @@
 
 source "https://rubygems.org"
 gemspec
+```ruby
+gem "minima"
+```
 
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]

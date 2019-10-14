@@ -16,6 +16,8 @@ Group | Environment | Operation | LED | Voltage | Note
 ## Problems:
 * Light intensity of LED is too weak to provide enough light for model. Therefore, it is just used for presentation.
 
-Fig.1:![model day](Green house model in Day.jpg)
+![model day](Green house model in Day.jpg)
+Fig.1
 
-Fig.2:![model night](Green house model with external light in Night.jpg)
+![model night](Green house model with external light in Night.jpg)
+Fig.2

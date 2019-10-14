@@ -4,7 +4,7 @@
 
 Met with TA to discuss our rough idea (as picture shown below) and current progress.
 
-[model](Green house model’s stretch.jpg)
+![model](Green house model’s stretch.jpg)
 
 ## Problems:
 * How to control the change of temperature and show its change

@@ -1,6 +1,6 @@
-# Progress 3
+# Progress 4
 
-## Oct 10th
+## Oct 14th
 
 ## Goal:
 * Measure voltage of different environment connecting with LED.

@@ -19,4 +19,3 @@ Met with TA to discuss our rough idea (as picture shown below) and current progr
 ## Others:
 * Do not need to make sure the sampling frequency is at more than twice the desired
 frequency to be measured, since the frequency of temperature data is low.
-

@@ -16,6 +16,9 @@ Group | Environment | Operation | LED | Voltage | Note
 ## Problems:
 * Light intensity of LED is too weak to provide enough light for model. Therefore, it is just used for presentation.
 
+## Solutions:
+* Adjust the location of LED and let them closer to sensor so that the light intensity is more sensitive.
+
 ![model day](Green house model in Day.jpg)
 Fig.1
 

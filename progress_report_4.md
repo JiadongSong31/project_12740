@@ -1,8 +1,6 @@
-# Progress 4
+# Progress 3
 
 ## Oct 10th
-
-Met with TA to discuss our rough idea (as picture shown below) and current progress.
 
 ![control system](control system.png)
 

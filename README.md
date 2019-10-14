@@ -2,7 +2,7 @@
 
 • Jiadong Song; Jiayong Hu; Jingwei Li; Yiqi Zhou
 
-[Video Link]()
+![Video Link](https://www.youtube.com/watch?v=rPscMN4SCZo)
 
 ## [Progress Report4](progress_report_4.md)
 

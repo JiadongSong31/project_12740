@@ -1,6 +1,7 @@
 # Smart Greenhouse Environment Control System
 
 • Jiadong Song; Jiayong Hu; Jingwei Li; Yiqi Zhou
+
 [Video Link]()
 
 ## [Progress Report4](progress_report_4.md)

@@ -4,7 +4,8 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wk0O95K__to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<video src="https://www.youtube.com/embed/wk0O95K__to" width="560" height="315" controls preload></video>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/wk0O95K__to)
+
 
 ## [Progress Report4](progress_report_4_0.md)
 

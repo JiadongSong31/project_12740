@@ -4,8 +4,8 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wk0O95K__to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/wk0O95K__to)
-
+<iframe src="https://player.vimeo.com/video/366655319" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/366655319">The First Step - Animation Teaser</a> from <a href="https://vimeo.com/aiw">Alfred Imageworks</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## [Progress Report4](progress_report_4_0.md)
 

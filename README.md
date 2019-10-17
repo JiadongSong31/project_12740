@@ -2,8 +2,6 @@
 
 • Jiadong Song; Jiayong Hu; Jingwei Li; Yiqi Zhou
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wk0O95K__to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <iframe src="https://player.vimeo.com/video/367126470" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/367126470">12740Final_Environmental_Contril</a> from <a href="https://vimeo.com/user90437655">jingwei</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 

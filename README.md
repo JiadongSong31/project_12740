@@ -52,7 +52,7 @@ We use DHT11 Temperature & Humidity Sensor Module and Photosensitive Light Senso
 
 ## 2.3 Signal Conditioning and Processing
 
-* For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28C or not. When the red LED lights up, it means that the environment temperature in the greenhouse is ideal. If the blue LED lights up, it means that we need to warm up the greenhouse.
+* For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28C or not. The data acquired by temperature sensor is sent to Raspberry Pi. When the red LED lights up, it means that the environment temperature in the greenhouse is ideal. If the blue LED lights up, it means that we need to warm up the greenhouse.
 
 * For the light part, we use 5 LEDs as our controller. These LEDs will help to generate extra light if the environment is not bright enough. The control method behind is PID. We collect the light intensity every iteration and based on the target value, we can calculate the error of light intensity. Then, we sum up all errors in history as the integral of error and subtract this error with last error to get the differential of error. We multiply them (error, integral, differential) with three parameters (P, I, D) to get the control variable. When we have the control variable, we adjust the duty ratio of the PWM wave to the LED, and the LEDs will respond with different intensity of light. After carefully tuning these parameters, we found the most suitable values for them, and we recorded the video with the best parameters.
 

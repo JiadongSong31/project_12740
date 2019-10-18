@@ -120,6 +120,21 @@ A duty cycle or power cycle is the fraction of one period in which a signal or s
 
 ## 4. Discussion
 
+#### How to control the temperature
+For now, our system only indicates the temperature trend of the environment but does not achieve the real control of the temperature. So in the future, we can connect the system to a real temperature control system and use the PID control as well. For example, when the temperature is too high, the circuit would open the window or turn on the cooling system, else it would turn on the heating system to make the temperature consistent.
+
+#### LEDs are not enough to keep the model in a proper lightness
+In this project, our LEDs don’t seem to have enough lightness to keep the model in normal light, so our solution is to maintain the voltage at a relatively high level so the LEDs can make the PID control successfully. To improve performance, we will need more LED bulbs or brighter bulbs that can provide enough brightness.
+
+#### Challenges of PID control
+The challenges of PID control lie in the tuning of parameters. PID control is an easy and powerful algorithm, but parameter tuning is sometimes tricky, which could be very time-consuming.
+
+#### How to apply our model to real greenhouses
+In our project, we simplify and abstract a lot of the elements of the greenhouse. From the perspective of data acquisition, one sensor for each factor is apparently not enough. From the perspective of control, light and temperature adjustment are more complicated in real life. There is no fault tolerance of the system. Moreover, no actual plant is used in our project.
+
+We used what we learned in the course and successfully implemented a smart greenhouse environment control system, but it still requires a lot of effort to apply the entire system of measurement and control into real greenhouses.
+
+
 ## 5. Code
 
 [OpenChirp](openchirp_code.md)

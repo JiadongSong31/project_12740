@@ -72,7 +72,7 @@ Parameters:
 
 ## 2.3 Signal Conditioning and Processing
 
-* For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28C or not. The data acquired by temperature sensor is sent to Raspberry Pi and the python script will determine if it is cold or warm. Red LED means warm and blue LED means cold.
+* For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28°C or not. The data acquired by temperature sensor is sent to Raspberry Pi and the python script will determine if it is cold or warm. Red LED means warm and blue LED means cold.
 
 * For the light part, we use 5 LEDs as our controller. These LEDs will help to generate extra light if the environment is not bright enough. The control method behind is PID. We collect the light intensity every iteration and based on the target value, we can calculate the error of light intensity. Then, we sum up all errors in history as the integral of error and subtract this error with last error to get the differential of error. We multiply them (error, integral, differential) with three parameters (P, I, D) to get the control variable. When we have the control variable, we adjust the duty ratio of the PWM wave to the LED, and the LEDs will respond with different intensity of light. After carefully tuning these parameters, we found the most suitable values for them, and we recorded the video with the best parameters.
 
@@ -84,6 +84,10 @@ A proportional–integral–derivative controller (PID controller or three-term 
 ## 3. Experiments and Results
 
 ### 3.1 Temperature indicator system
+
+For temperature indication system, the humidity and temperature sensor measures temperature every 0.1s. We use two LEDs - one is blue and the other one is red as indicators. To simplify the problem, we assume that the best temperature for the plant is 28°C.
+
+Normally, the red LED keeps lightened. If the temperature is lower than 28°C, the red LED will turn off and the blue LED will turn on, which indicates the greenhouse needs to be warmed up. In order to maintain the environment at the required temperature, a hair dryer is used to adjust the temperature in the greenhouse. After warming up, the blue LED turns off and the red one turns on again, which represents the ideal state for the growth of the plant is restored.
 
 ### 3.2 Light control system
 

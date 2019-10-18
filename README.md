@@ -71,7 +71,7 @@ Parameters:
 ![Photoresistor sensor](light.jpg)
 <p align="center">Figure3. Photosensitive light sensor</p>
 
-## 2.3 Signal Conditioning and Processing
+### 2.3 Signal Conditioning and Processing
 
 ![Model](model.png)
 <p align="center">Figure4. Greenhouse model</p>
@@ -80,7 +80,7 @@ Parameters:
 
 * For the light part, we use 5 LEDs as our controller. These LEDs will help to generate extra light if the environment is not bright enough. The control method behind is PID. We collect the light intensity every iteration and based on the target value, we can calculate the error of light intensity. Then, we sum up all errors in history as the integral of error and subtract this error with last error to get the differential of error. We multiply them (error, integral, differential) with three parameters (P, I, D) to get the control variable. When we have the control variable, we adjust the duty ratio of the PWM wave to the LED, and the LEDs will respond with different intensity of light. After carefully tuning these parameters, we found the most suitable values for them, and we recorded the video with the best parameters.
 
-## 2.4 PID controller
+### 2.4 PID controller
 
 A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value {\displaystyle e(t)}e(t) as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name.
 
@@ -129,7 +129,7 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 
 A duty cycle or power cycle is the fraction of one period in which a signal or system is active. We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
 
-## 4. Discussion
+## 5. Discussion
 
 #### How to control the temperature
 For now, our system only indicates the temperature trend of the environment but does not achieve the real control of the temperature. So in the future, we can connect the system to a real temperature control system and use the PID control as well. For example, when the temperature is too high, the circuit would open the window or turn on the cooling system, else it would turn on the heating system to make the temperature consistent.
@@ -146,11 +146,11 @@ In our project, we simplify and abstract a lot of the elements of the greenhouse
 We used what we learned in the course and successfully implemented a smart greenhouse environment control system, but it still requires a lot of effort to apply the entire system of measurement and control into real greenhouses.
 
 
-## 5. Code
+## 6. Code
 
 [OpenChirp](openchirp_code.md)
 
-## 6. Reference
+## 7. Reference
 1. [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
 2. [https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html](https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html)
 3. [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)

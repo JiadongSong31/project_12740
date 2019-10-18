@@ -3,7 +3,7 @@
 • Jiadong Song; Jiayong Hu; Jingwei Li; Yiqi Zhou
 
 <iframe src="https://player.vimeo.com/video/367126470" width="600" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/367126470">12740Final_Environmental_Contril</a> from <a href="https://vimeo.com/user90437655">jingwei</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/367126470">12740Final_Environmental_Control</a> from <a href="https://vimeo.com/user90437655">jingwei</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ### [Progress Report4](progress_report_4_0.md)
 
@@ -113,6 +113,7 @@ A duty cycle or power cycle is the fraction of one period in which a signal or s
 3. [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)
 4. [https://en.wikipedia.org/wiki/Duty_cycle](https://en.wikipedia.org/wiki/Duty_cycle)
 5. [https://en.wikipedia.org/wiki/PID_controller](https://en.wikipedia.org/wiki/PID_controller)
+6. [https://en.wikipedia.org/wiki/Pulse-width_modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 
 
 

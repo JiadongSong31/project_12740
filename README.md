@@ -22,6 +22,7 @@ Our project is to use temperature and light intensity sensors to monitor and con
 A greenhouse is a structure in which plants requiring regulated climatic conditions are grown. Many commercial greenhouses are high tech production facilities for plants. The greenhouses are filled with equipment including screening installation, heating, cooling, lighting, and may be controlled by a computer to optimize conditions for plant growth. Different techniques are then used to evaluate optimality-degrees and comfort ratio of greenhouse micro-climate (i.e., air temperature, relative humidity and vapor pressure deficit) in order to reduce production risk prior to cultivation of a specific crop.
 
 ![Greenhouse](greenhouse.jpg)
+Figure1. Greenhouse
 
 The greenhouse is one of the most important innovations to improve crop yield. Temperature and light intensity are two important environmental factors that affect the plants’ growth, which are also the factors we measure and control in this project. 
 
@@ -57,6 +58,7 @@ Parameters:
 * Temperature: 0 - 50º ± 2 %
 * Sampling rate: ≤ 1 Hz
 ![Temperature sensor](temperature.png)
+Figure2. Temperature sensor
 
 #### Photosensitive Light Sensor Module
 
@@ -67,10 +69,12 @@ Parameters:
 * Output Signal: Analog or Digital(0 or 1)
 * PCB Size: 3.2*1.4cm
 ![Photoresistor sensor](light.jpg)
+Figure3. Photosensitive light sensor
 
 ## 2.3 Signal Conditioning and Processing
 
 ![Model](model.png)
+Figure4. Greenhouse model
 
 * For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28°C or not. The data acquired by temperature sensor is sent to Raspberry Pi and the python script will determine if it is cold or warm. Red LED means warm and blue LED means cold.
 
@@ -81,6 +85,7 @@ Parameters:
 A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value {\displaystyle e(t)}e(t) as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name.
 
 ![PID](pid.png)
+Figure5. PID control
 
 ## 3. Experiments and Results
 
@@ -91,8 +96,10 @@ For temperature indication system, the humidity and temperature sensor measures 
 Normally, the red LED keeps lightened. If the temperature is lower than 28°C, the red LED will turn off and the blue LED will turn on, which indicates the greenhouse needs to be warmed up. In order to maintain the environment at the required temperature, a hair dryer is used to adjust the temperature in the greenhouse. After warming up, the blue LED turns off and the red one turns on again, which represents the ideal state for the growth of the plant is restored.
 
 ![RED](red.png)
+Figure6. Red LED indicates that temperature is above 28°C.
 
 ![BLUE](blue.png)
+Figure7. Blue LED indicates that temperature is below 28°C.
 
 ### 3.2 Light control system
 
@@ -101,20 +108,24 @@ For the light compensation system, the light sensor measures light intensity eve
 On sunny days, the external light is sufficient for the greenhouse and meets its needs. Therefore, the LEDs would not turn on.
 
 ![Sunny](LEDS_cloudy.png)
+Figure8. LEDS on sunny days
 
 On cloudy days, the external light is weakened and cannot meet the needs of the greenhouse. Hence, the LEDs would automatically turn on and gradually turn up to make up the required light intensity.
 
 ![Cloudy](LEDS_sunny.png)
+Figure9. LEDS on cloudy days
 
 The LEDs would further enhance the brightness at night, that is, they would gradually turn up until the greenhouse has enough light intensity even though there is no external light at all. They would turn down again when the sun rises and turn off if light intensity meets the needs.
 
 ![Night](LEDS_night.png)
+Figure10. LEDS at night
 
 ## 4. OpenChirp
 
 We integrated our system to the OpenChirp so we can visualize the light intensity and the lightness of the LEDs. As the figure shows below:
 
 ![OpenChirp](Openchirp.png)
+Figure11. Data visualization by OpenChirp
 
 A duty cycle or power cycle is the fraction of one period in which a signal or system is active. We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
 

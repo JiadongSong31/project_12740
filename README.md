@@ -41,20 +41,20 @@ The goal of our system is to monitor the greenhouse environment and adjust the l
 In this project, light intensity will be measured through illuminance, where lux are the units (equivalent to lumens per squared-meter). For reference, an office will normally have lux values between 320-500 lux.
 Celsius is the temperature unit we are going to use, where 0°C is the freezing point of water and 100°C is the boiling point of water.
 
-## 3. Sensor(s) Used
+## 2.2 Sensor(s) Used
 
 We use DHT11 Temperature & Humidity Sensor Module and Photosensitive Light Sensor Module.
 
-## 4. Signal Conditioning and Processing
+## 2.3 Signal Conditioning and Processing
 
 * For the temperature part, we use two LEDs(Red / Blue) to indicate if the temperature is above 28C.
 * For the light part, we use 5 LEDs as our controller. These LEDs will help to generate extra light if the environment is not bright enough. The control method behind is PID. We collect the light intensity every iteration and based on the target value, we can calculate the error of light intensity. Then, we sum up all errors in history as the integral of error and subtract this error with last error to get the differential of error. We multiply them (error, integral, differential) with three parameters (P, I, D) to get the control variable. When we have the control variable, we adjust the duty ratio of the PWM wave to the LED, and the LEDs will respond with different intensity of light. After carefully tuning these parameters, we found the most suitable values for them, and we recorded the video with the best parameters.
 
-## 5. Experiments and Results
+## 3. Experiments and Results
 
-### 5.1 Temperature indicator system
+### 3.1 Temperature indicator system
 
-### 5.2 Light control system
+### 3.2 Light control system
 
 For the light compensation system, the light sensor measures light intensity every 0.1s. PID is used to control LEDs to provide extra light for the greenhouse system and keep the light intensity of the greenhouse at a stable value.
 
@@ -68,11 +68,11 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 
 [OpenChip]()
 
-## 6. Discussion
+## 4. Discussion
 
-## 7. Code
+## 5. Code
 
-## 8. Reference
+## 6. Reference
 1. [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
 
 

@@ -100,11 +100,11 @@ For the light compensation system, the light sensor measures light intensity eve
 
 On sunny days, the external light is sufficient for the greenhouse and meets its needs. Therefore, the LEDs would not turn on.
 
-![Sunny](LEDS_sunny.png)
+![Sunny](LEDS_cloudy.png)
 
 On cloudy days, the external light is weakened and cannot meet the needs of the greenhouse. Hence, the LEDs would automatically turn on and gradually turn up to make up the required light intensity.
 
-![Cloudy](LEDS_cloudy.png)
+![Cloudy](LEDS_sunny.png)
 
 The LEDs would further enhance the brightness at night, that is, they would gradually turn up until the greenhouse has enough light intensity even though there is no external light at all. They would turn down again when the sun rises and turn off if light intensity meets the needs.
 

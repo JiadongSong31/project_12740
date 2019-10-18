@@ -8,13 +8,9 @@
 ## 0. Progress Reports
 
 ##### [Progress Report4](progress_report_4_0.md)
-
 ##### [Progress Report3](progress_report_3_0.md)
-
 ##### [Progress Report2](progress_report_2.md)
-
 ##### [Progress Report1](progress_report_1.md)
-
 ##### [Progress Report0](progress_report.html)
 
 ## 1. Introduction

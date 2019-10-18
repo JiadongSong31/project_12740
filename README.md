@@ -61,6 +61,12 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 
 [OpenChip]()
 
+## 6. Discussion
+
+## 7. Code
+
+## 8. Reference
+
 
 
 

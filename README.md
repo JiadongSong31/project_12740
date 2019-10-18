@@ -44,11 +44,31 @@ Light intensity is measured through illuminance, where lux are the units (equiva
 
 Temperature is measured in unit of Celsius, where 0°C is the freezing point of water and 100°C is the boiling point of water.
 
-## 2.2 Sensor(s) Used
+### 2.2 Sensor(s) Used
 
 We use DHT11 Temperature & Humidity Sensor Module and Photosensitive Light Sensor Module.
 
-* Temperature & Humidity Sensor Module
+#### Temperature & Humidity Sensor Module
+
+DHT11 Temperature-Humidity Sensor Module is an accurate and inexpensive sensor that includes an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
+
+Parameters:
+* Power supply: 3.3 - 5 V
+* Current: 2.5 mA max use of current during conversion (when data request)
+* Humidity: 20 - 90 % ± 5 %
+* Temperature: 0 - 50º ± 2 %
+* Sampling rate: ≤ 1 Hz
+![Temperature sensor](temperature.png)
+
+#### Photosensitive Light Sensor Module
+
+The Light sensor module is based on photodetector GL5528 to detect the light intensity of the environment. As the resistance of the sensor varies depending on the amount of light it is exposed to, the output voltage changes with the light intensity. This module outputs both analog and digital signals, which can be used to trigger other modules. Also, the potentiometer can be used to adjust the sensitivity of the digital output. The digital terminal output HIGH when the light intensity exceeds the value set by a potentiometer and vice versa. The outputs of analog terminal increase with the light intensity.
+
+Parameters:
+* Working Voltage: 5V
+* Output Signal: Analog or Digital(0 or 1)
+* PCB Size: 3.2*1.4cm
+![Photoresistor sensor](light.png)
 
 ## 2.3 Signal Conditioning and Processing
 
@@ -80,6 +100,8 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 
 ## 6. Reference
 1. [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
+2. [https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html](https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html)
+3. [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)
 
 
 

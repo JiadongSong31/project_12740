@@ -72,7 +72,7 @@ Parameters:
 
 ## 2.3 Signal Conditioning and Processing
 
-* For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28C or not. The data acquired by temperature sensor is sent to Raspberry Pi. When the red LED lights up, it means that the environment temperature in the greenhouse is ideal. If the blue LED lights up, it means that we need to warm up the greenhouse.
+* For the temperature part, we use two LEDs (Red/ Blue) as indicators of whether the temperature is above 28C or not. The data acquired by temperature sensor is sent to Raspberry Pi and the python script will determine if it is cold or warm. Red LED means warm and blue LED means cold.
 
 * For the light part, we use 5 LEDs as our controller. These LEDs will help to generate extra light if the environment is not bright enough. The control method behind is PID. We collect the light intensity every iteration and based on the target value, we can calculate the error of light intensity. Then, we sum up all errors in history as the integral of error and subtract this error with last error to get the differential of error. We multiply them (error, integral, differential) with three parameters (P, I, D) to get the control variable. When we have the control variable, we adjust the duty ratio of the PWM wave to the LED, and the LEDs will respond with different intensity of light. After carefully tuning these parameters, we found the most suitable values for them, and we recorded the video with the best parameters.
 
@@ -90,18 +90,23 @@ On cloudy days, the external light is weakened and cannot meet the needs of the 
 
 The LEDs would further enhance the brightness at night, that is, they would gradually turn up until the greenhouse has enough light intensity even though there is no external light at all. They would turn down again when the sun rises and turn off if light intensity meets the needs.
 
-We integrated our system to the OpenChirp so we can visualize the light intensity and the lightness of the LEDs. As the figure shows below:
+## 4. OpenChirp
 
-[OpenChip]()
+We integrated our system to the OpenChirp so we can visualize the light intensity and the lightness of the LEDs. As the figure shows below:
+[OpenChirp](Openchirp.png)
+A duty cycle or power cycle is the fraction of one period in which a signal or system is active. We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
 
 ## 4. Discussion
 
 ## 5. Code
 
+[OpenChirp](openchirp_code.md)
+
 ## 6. Reference
 1. [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
 2. [https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html](https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html)
 3. [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)
+4. [https://en.wikipedia.org/wiki/Duty_cycle](https://en.wikipedia.org/wiki/Duty_cycle)
 
 
 

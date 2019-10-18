@@ -68,7 +68,7 @@ Parameters:
 * Working Voltage: 5V
 * Output Signal: Analog or Digital(0 or 1)
 * PCB Size: 3.2*1.4cm
-![Photoresistor sensor](light.jpg =400x200)
+![Photoresistor sensor](light.jpg)
 
 ## 2.3 Signal Conditioning and Processing
 

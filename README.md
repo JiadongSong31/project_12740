@@ -21,7 +21,14 @@ Our project is to use temperature and light intensity sensors to monitor and con
 
 ### 1.1 Motivation
 
-The greenhouse is one of the most important innovations to improve crop yield. Temperature and light intensity are two important environmental factors that affect the plants’ growth. But it is hard and time-consuming for people to monitor and control these factors manually, which is the motivation behind this Smart Greenhouse project. 
+A greenhouse is a structure in which plants requiring regulated climatic conditions are grown. Many commercial greenhouses are high tech production facilities for plants. The greenhouses are filled with equipment including screening installation, heating, cooling, lighting, and may be controlled by a computer to optimize conditions for plant growth. Different techniques are then used to evaluate optimality-degrees and comfort ratio of greenhouse micro-climate (i.e., air temperature, relative humidity and vapor pressure deficit) in order to reduce production risk prior to cultivation of a specific crop.
+
+[Greenhouse](greenhouse.jpg)
+
+The greenhouse is one of the most important innovations to improve crop yield. Temperature and light intensity are two important environmental factors that affect the plants’ growth, which are also the factors we measure and control in this project. 
+
+It is hard and time-consuming for people to monitor and control these factors manually. A lot of companies provide modern solutions for control system in greenhouse involving advanced equipment and machine learning methods. Our motivation behind this Smart Greenhouse project is to provide a simple and cheap solution for the greenhouse control system.
+
 
 ### 1.2 Goals
 
@@ -66,6 +73,7 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 ## 7. Code
 
 ## 8. Reference
+1. [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
 
 
 

@@ -38,8 +38,11 @@ The goal of our system is to monitor the greenhouse environment and adjust the l
 
 ### 2.1 Phenomena of Interest
 
-In this project, light intensity will be measured through illuminance, where lux are the units (equivalent to lumens per squared-meter). For reference, an office will normally have lux values between 320-500 lux.
-Celsius is the temperature unit we are going to use, where 0°C is the freezing point of water and 100°C is the boiling point of water.
+The growth of the plant is mainly dependent on the temperature and light.
+
+Light intensity is measured through illuminance, where lux are the units (equivalent to lumens per squared-meter). For reference, an office will normally have lux values between 320-500 lux.
+
+Temperature is measured in unit of Celsius, where 0°C is the freezing point of water and 100°C is the boiling point of water.
 
 ## 2.2 Sensor(s) Used
 

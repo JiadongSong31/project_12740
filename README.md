@@ -127,7 +127,7 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 ![OpenChirp](Openchirp.png)
 <p align="center">Figure11. Data visualization by OpenChirp</p>
 
-A duty cycle or power cycle is the fraction of one period in which a signal or system is active.[4] We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
+A duty cycle or power cycle is the fraction of one period in which a signal or system is active[4]. We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
 
 ## 5. Discussion
 
@@ -152,10 +152,15 @@ We used what we learned in the course and successfully implemented a smart green
 
 ## 7. Reference
 [1] [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
+
 [2] [https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html](https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html)
+
 [3] [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)
+
 [4] [https://en.wikipedia.org/wiki/Duty_cycle](https://en.wikipedia.org/wiki/Duty_cycle)
+
 [5] [https://en.wikipedia.org/wiki/PID_controller](https://en.wikipedia.org/wiki/PID_controller)
+
 [6] [https://en.wikipedia.org/wiki/Pulse-width_modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 
 

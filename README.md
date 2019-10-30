@@ -49,7 +49,7 @@ We use DHT11 Temperature & Humidity Sensor Module and Photosensitive Light Senso
 
 #### Temperature & Humidity Sensor Module
 
-DHT11 Temperature-Humidity Sensor Module is an accurate and inexpensive sensor that includes an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
+DHT11 Temperature-Humidity Sensor Module is an accurate and inexpensive sensor that includes an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
 
 Parameters:
 * Power supply: 3.3 - 5 V
@@ -62,7 +62,7 @@ Parameters:
 
 #### Photosensitive Light Sensor Module
 
-The Light sensor module is based on photodetector GL5528 to detect the light intensity of the environment. As the resistance of the sensor varies depending on the amount of light it is exposed to, the output voltage changes with the light intensity. This module outputs both analog and digital signals, which can be used to trigger other modules. Also, the potentiometer can be used to adjust the sensitivity of the digital output. The digital terminal output HIGH when the light intensity exceeds the value set by a potentiometer and vice versa. The outputs of analog terminal increase with the light intensity.
+The Light sensor module is based on photodetector GL5528 to detect the light intensity of the environment. As the resistance of the sensor varies depending on the amount of light it is exposed to, the output voltage changes with the light intensity. This module outputs both analog and digital signals, which can be used to trigger other modules. Also, the potentiometer can be used to adjust the sensitivity of the digital output. The digital terminal output HIGH when the light intensity exceeds the value set by a potentiometer and vice versa. The outputs of analog terminal increase with the light intensity.[3]
 
 Parameters:
 * Working Voltage: 5V
@@ -82,7 +82,7 @@ Parameters:
 
 ### 2.4 PID controller
 
-A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value {\displaystyle e(t)}e(t) as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name.
+A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value {\displaystyle e(t)}e(t) as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name.[5]
 
 ![PID](pid.png)
 <p align="center">Figure5. PID control</p>
@@ -127,7 +127,7 @@ We integrated our system to the OpenChirp so we can visualize the light intensit
 ![OpenChirp](Openchirp.png)
 <p align="center">Figure11. Data visualization by OpenChirp</p>
 
-A duty cycle or power cycle is the fraction of one period in which a signal or system is active. We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
+A duty cycle or power cycle is the fraction of one period in which a signal or system is active.[4] We use the duty cycle to represent the lightness of the LEDs. When the duty cycle is 0%, it means that the LEDs are fully lighting up, while the duty cycle is 100%, the LEDs are turned off and there is no light from the bulbs. And we represent the light intensity with voltage. The higher voltage of the circuit is, the darker is the environment. So we can see that at 21:45 the voltage jumped up which means we turned off the light and the system was in darkness, at this time, the LEDs were turned on gradually to make up the loss of the light intensity. And at 21:47, we turned on the lights, so the duty cycle of the LEDs increased gradually which means the bulbs turned off because there was enough light.
 
 ## 5. Discussion
 
@@ -151,12 +151,12 @@ We used what we learned in the course and successfully implemented a smart green
 [OpenChirp](openchirp_code.md)
 
 ## 7. Reference
-1. [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
-2. [https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html](https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html)
-3. [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)
-4. [https://en.wikipedia.org/wiki/Duty_cycle](https://en.wikipedia.org/wiki/Duty_cycle)
-5. [https://en.wikipedia.org/wiki/PID_controller](https://en.wikipedia.org/wiki/PID_controller)
-6. [https://en.wikipedia.org/wiki/Pulse-width_modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
+[1] [https://en.m.wikipedia.org/wiki/Greenhouse](https://en.m.wikipedia.org/wiki/Greenhouse)
+[2] [https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html](https://www.robotshop.com/en/dht11-temperature-humidity-sensor-module-dyn.html)
+[3] [https://www.makerfabs.com/light-sensor-module.html](https://www.makerfabs.com/light-sensor-module.html)
+[4] [https://en.wikipedia.org/wiki/Duty_cycle](https://en.wikipedia.org/wiki/Duty_cycle)
+[5] [https://en.wikipedia.org/wiki/PID_controller](https://en.wikipedia.org/wiki/PID_controller)
+[6] [https://en.wikipedia.org/wiki/Pulse-width_modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 
 
 

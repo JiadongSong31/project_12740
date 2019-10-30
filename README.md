@@ -19,7 +19,7 @@ Our project is to use temperature and light intensity sensors to monitor and con
 
 ### 1.1 Motivation
 
-A greenhouse is a structure in which plants requiring regulated climatic conditions are grown. Many commercial greenhouses are high tech production facilities for plants. The greenhouses are filled with equipment including screening installation, heating, cooling, lighting, and may be controlled by a computer to optimize conditions for plant growth. Different techniques are then used to evaluate optimality-degrees and comfort ratio of greenhouse micro-climate (i.e., air temperature, relative humidity and vapor pressure deficit) in order to reduce production risk prior to cultivation of a specific crop.
+A greenhouse is a structure in which plants requiring regulated climatic conditions are grown. Many commercial greenhouses are high tech production facilities for plants. The greenhouses are filled with equipment including screening installation, heating, cooling, lighting, and may be controlled by a computer to optimize conditions for plant growth. Different techniques are then used to evaluate optimality-degrees and comfort ratio of greenhouse micro-climate (i.e., air temperature, relative humidity and vapor pressure deficit) in order to reduce production risk prior to cultivation of a specific crop.[1]
 
 ![Greenhouse](greenhouse.jpg)
 <p align="center">Figure1. Greenhouse</p>

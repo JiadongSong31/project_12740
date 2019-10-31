@@ -47,7 +47,7 @@ We use DHT11 Temperature & Humidity Sensor Module and Photosensitive Light Senso
 
 #### Temperature & Humidity Sensor Module
 
-DHT11 Temperature-Humidity Sensor Module is an accurate and inexpensive sensor that includes an ADC to convert analog values of humidity and temperature[2]. It comes with an 8-bit microcontroller and provides reliable output results.
+DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
 
 Parameters:
 * Power supply: 3.3 - 5 V
@@ -60,7 +60,7 @@ Parameters:
 
 #### Photosensitive Light Sensor Module
 
-The Light sensor module is based on photodetector GL5528 to detect the light intensity of the environment. As the resistance of the sensor varies depending on the amount of light it is exposed to, the output voltage changes with the light intensity. This module outputs both analog and digital signals, which can be used to trigger other modules. Also, the potentiometer can be used to adjust the sensitivity of the digital output. The digital terminal output HIGH when the light intensity exceeds the value set by a potentiometer and vice versa. The outputs of analog terminal increase with the light intensity.[3]
+The Light sensor module is to detect the light intensity of the environment. The output voltage is related to light intensity based on the changes in resistance of the sensor which depends on light.[3]
 
 Parameters:
 * Working Voltage: 5V
